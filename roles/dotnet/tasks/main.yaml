@@ -1,0 +1,18 @@
+---
+
+- name: add dotnet key
+  apt_key:
+    url: "{{ dotnet_apt_key }}"
+
+- name: add dotnet repo
+  apt_repository:
+    repo: "{{ dotnet_repo }}"
+    state: present
+    filename: dotnet
+
+- name: install dotnet sdk
+  apt:
+    name: dotnet-sdk-5.0
+    force_apt_get: yes
+
+...

@@ -1,0 +1,6 @@
+---
+
+dotnet_repo: "deb [arch=amd64,armhf,arm64] https://packages.microsoft.com/ubuntu/20.04/prod focal main"
+dotnet_apt_key: "https://packages.microsoft.com/keys/microsoft.asc"
+
+...

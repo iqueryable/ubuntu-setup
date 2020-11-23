@@ -1,0 +1,22 @@
+---
+
+- name: install zsh
+  apt:
+    name:
+      - zsh
+    force_apt_get: yes
+
+- name: change user's shell to zsh
+  user:
+    name: "{{ username }}"
+    shell: /usr/bin/zsh
+
+- name: install zsh antigen
+  git:
+    dest: "~{{ username }}/.antigen"
+    repo: "{{ zsh_antigen_url }}"
+    version: "{{ zsh_antigen_version }}"
+  become: yes
+  become_user: "{{ username }}"
+
+...

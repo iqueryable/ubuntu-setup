@@ -1,0 +1,128 @@
+---
+
+archiving_tools:
+  # - arj
+  # - cabextract
+  # - file-roller
+  # - mpack
+  # - p7zip-full
+  # - p7zip-rar
+  # - rar
+  # - sharutils
+  # - unace
+  # - unrar
+  - unzip
+  # - uudeview
+  - zip
+
+productivity_tools:
+  # - libreoffice
+
+system_tools:
+  # - fatrace
+  # - gnome-calculator
+  # - gnome-shell-extension-bluetooth-quick-connect  # enable in gnome-tweak-tools > Extensions
+  # - gnome-shell-timer  # enable in gnome-tweak-tools > Extensions
+  # - gnome-tweak-tool
+  - neofetch
+  # - progress
+  # - pwgen
+
+system_tools_laptop:
+  # - tlp
+  # - tlp-rdw
+  # - acpi-call-dkms  # for newer ThinkPads (X220/T420 and later)
+
+download_tools:
+  # - aria2
+  # - axel
+  # - qbittorrent
+  # - speedtest-cli
+  # - wget
+  # - youtube-dl
+
+developer_tools:
+  # - android-tools-adb
+  # - android-tools-fastboot
+  # - ansible
+  # - ansible-lint
+  # - awscli
+  # - bat
+  # - black
+  - build-essential
+  # - cloc
+  # - clusterssh
+  # - colordiff
+  - curl
+  # - default-jre-headless
+  # - dos2unix
+  # - expect
+  # - filezilla
+  # - fonts-powerline
+  # - g++
+  # - gedit-plugins
+  # - geoip-bin
+  # - ghostwriter
+  - git
+  # - git-extras
+  # - gitg
+  # - golang-go
+  # - htop
+  # - httpie
+  # - inotify-tools
+  # - ipython3
+  - jq
+  # - kwalify
+  # - makeself
+  # - meld
+  # - miller
+  # - most
+  # - ncat
+  # - netcat
+  # - nmap
+  # - nodejs
+  # - pandoc
+  # - parallel
+  # - pep8
+  # - pipenv
+  # - powerline
+  # - pry
+  # - pssh
+  # - pv
+  # - pylint
+  # - python3-demjson  # provides jsonlint-py3 for json lint
+  # - python3-jmespath
+  # - python3-pep8
+  # - python3-pip
+  # - ranger
+  # - recode
+  # - remmina
+  # - rename
+  # - ruby
+  # - ruby-dev
+  # - shellcheck
+  # - siege
+  # - socat
+  # - sshfs
+  # - sshpass
+  # - tilix
+  # - tldr
+  # - tmux
+  # - tmuxp
+  # - tree
+  # - uget
+  # - xclip
+  # - yamllint
+  # - zeal
+
+media_tools:
+  # - ffmpeg
+  # - gimp
+  # - imagemagick
+  # - libimage-exiftool-perl
+  # - mediainfo
+  # - soundconverter
+  # - totem
+  # - vlc
+
+...

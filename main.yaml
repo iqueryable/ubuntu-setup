@@ -1,0 +1,9 @@
+---
+- import_playbook: system.yaml
+- import_playbook: ssh.yaml
+- import_playbook: terminal.yaml
+- import_playbook: tools.yaml
+- import_playbook: languages.yaml
+- import_playbook: applications.yaml
+
+...

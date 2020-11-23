@@ -1,0 +1,24 @@
+---
+
+- name: perform a dist upgrade
+  apt:
+    update_cache: yes
+    upgrade: dist
+    force_apt_get: yes
+
+- name: install system tools
+  apt:
+    name: "{{ system_tools }}"
+    force_apt_get: yes
+
+- name: install archiving tools
+  apt:
+    name: "{{ archiving_tools }}"
+    force_apt_get: yes
+
+- name: install developer tools
+  apt:
+    name: "{{ developer_tools }}"
+    force_apt_get: yes
+
+...

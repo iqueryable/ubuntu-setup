@@ -1,0 +1,31 @@
+---
+
+- name: add docker apt key
+  apt_key:
+    url: "{{ docker_apt_key }}"
+
+- name: add docker repo
+  apt_repository:
+    repo: "{{ docker_repo }}"
+    state: present
+    filename: docker
+
+- name: install docker
+  apt:
+    name:
+      - docker-ce
+      - docker-ce-cli
+      - containerd.io
+    force_apt_get: yes
+
+- name: create docker group
+  group:
+    name: docker
+
+- name: add user to docker group
+  user:
+    name: "{{ username }}"
+    append: yes
+    groups: docker
+
+...

@@ -1,0 +1,6 @@
+---
+
+kubectl_repo: "deb https://apt.kubernetes.io/ kubernetes-xenial main"
+kubectl_apt_key: "https://packages.cloud.google.com/apt/doc/apt-key.gpg"
+
+...

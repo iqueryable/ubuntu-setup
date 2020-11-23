@@ -1,0 +1,15 @@
+---
+
+- name: download aws cli
+  unarchive:
+    src: "{{ awscli_download_url }}"
+    dest: /tmp
+    remote_src: yes
+    creates: /usr/local/bin/aws
+
+- name: install aws cli
+  command: /tmp/aws/install
+  args:
+    creates: /usr/local/bin/aws
+
+...

@@ -1,0 +1,9 @@
+---
+
+- hosts: localhost
+  roles:
+    - awscli
+    - docker
+    - kubectl
+
+...
